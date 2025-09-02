@@ -1,1 +1,11 @@
-<p>hello works!</p>
+<div class="container">
+  <h1>Nomes</h1>
+
+  <div class="name-list">
+    @for(name of names; track name) {
+    <button class="name-button" (click)="selectName(name)">
+      {{name}}
+    </button>
+    }
+  </div>
+</div>

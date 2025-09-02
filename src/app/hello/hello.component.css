@@ -1,0 +1,43 @@
+.container {
+  display: flex;
+  flex-direction: column; /* Organiza os itens (título e lista) em coluna */
+  align-items: center;   /* Centraliza horizontalmente os itens dentro do container */
+  margin-top: 50px;      /* Espaçamento do topo */
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;    /* Centraliza o texto do título */
+  margin-bottom: 30px;   /* Espaço abaixo do título */
+  color: #333;           /* Cor do texto do título */
+  font-size: 2.5em;      /* Tamanho maior para o título */
+}
+
+.name-list {
+  display: flex;         /* Transforma a lista em um container flexível */
+  flex-direction: row;   /* Coloca os itens (botões) em linha */
+  gap: 15px;             /* Aumenta o espaçamento entre os botões */
+  justify-content: center; /* Centraliza os botões na linha */
+  flex-wrap: wrap;       /* Permite que os botões quebrem a linha se não houver espaço */
+  max-width: 800px;      /* Limita a largura para que os botões não se espalhem muito */
+  padding: 0 20px;       /* Preenchimento nas laterais */
+}
+
+.name-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 12px 25px;    /* Um pouco mais de padding para os botões */
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;       /* Aumenta o tamanho da fonte dos botões */
+  cursor: pointer;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease; /* Adiciona transição para o transform */
+  min-width: 120px;      /* Garante uma largura mínima para os botões */
+}
+
+.name-button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px); /* Efeito sutil ao passar o mouse */
+}
